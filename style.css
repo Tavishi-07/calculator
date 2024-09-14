@@ -112,3 +112,43 @@ button {
   min-height: 64px;
   font-size: 40px;
 }
+
+/* Responsive design for mobile screens */
+@media (max-width: 768px) {
+    .main, .calculator {
+        width: 90%;
+        height: auto;
+        border-radius: 50px;
+    }
+
+    .screen {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        border-radius: 50px;
+    }
+
+    .buttons-grid {
+        grid-gap: 5px;
+    }
+
+    button {
+        height: 50px;
+        width: 100%;
+        font-size: 18px;
+    }
+
+    #clearBtn, #deleteBtn {
+        grid-column: span 2;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 40px;
+        margin-top: 5%;
+    }
+
+    .footer {
+        font-size: 12px;
+    }
+}
